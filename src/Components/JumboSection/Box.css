@@ -79,7 +79,7 @@ span:nth-child(10) {
   margin-left: 3px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
   .box {
     width: 90%;
     padding: 10px;
@@ -145,4 +145,21 @@ span:nth-child(10) {
   font-weight: 500;
   color: #93959f;
 }
+}
+@media only screen and (max-width: 250px){
+  .address_pick > input {
+    font-size: 10px;
+    height: 30px;
+    width: 200px;
+    font-weight: 200;
+   
+  }
+  .address_pick > button {
+    color: #ffff;
+    font-size: 10px;
+    background-color: #fc8019;
+    font-weight: 200;
+    border: none;
+    width: 50px;
+  }
 }
