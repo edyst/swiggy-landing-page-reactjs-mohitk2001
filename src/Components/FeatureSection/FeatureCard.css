@@ -1,0 +1,10 @@
+.FeatureCard{
+    flex: 0.3;
+    text-align: center;
+}
+
+.FeatureCard>img{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}

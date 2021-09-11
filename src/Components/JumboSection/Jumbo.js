@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Jumbo.css";
-import texts from "./AnimeText";
+import Box from "./Box";
 function Jumbo() {
   
   const [animeText, setanimeText] = useState("Movie marathon?");
@@ -16,11 +16,11 @@ function Jumbo() {
             <button className="signUp">Sign up</button>
           </div>
         </div>
-        <h1 className="animationText">{animeText}</h1>
+        <Box/>
       </div>
       <div className="jumboRight">
         <img
-          src="https://web.archive.org/web/20210903175246im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq"
+          src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Breakfast2-new_men3ne"
           alt="topPic"
         />
       </div>
