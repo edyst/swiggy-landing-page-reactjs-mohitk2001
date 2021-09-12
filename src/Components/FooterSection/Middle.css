@@ -9,4 +9,8 @@
     font-size: 17px;
     color: #ffffff;
     line-height: 35px;
+    transition: transform 450ms;
+}
+.middle>a:hover{
+    transform:scale(1.08)
 }

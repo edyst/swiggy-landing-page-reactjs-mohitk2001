@@ -9,11 +9,14 @@
 .firstB{
     flex: 1;
 }
-.firstB>img{
+.firstB>a>img{
     height: 60px;
     width: 150px;
     object-fit: fill;
-    
+    transition: transform 450ms;
+}
+.firstB>a>img:hover{
+    transform: scale(1.08);
 }
 .firstS{
     flex: 1;
@@ -30,6 +33,18 @@
     justify-content: space-evenly;
     font-size: 25px;
     font-weight: 600;
+}
+.bottomLast>a{
+    
+    text-decoration: none;
+    font-weight: 500;
+  
+    color: #ffffff;
+   
+    transition: transform 450ms;
+}
+.bottomLast>a:hover{
+    transform: scale(1.08);
 }
 @media only screen and (max-width: 768px){
     .FooterBottom{

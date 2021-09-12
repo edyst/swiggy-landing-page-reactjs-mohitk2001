@@ -120,6 +120,7 @@ span:nth-child(10) {
     font-weight: 500;
     border: none;
     width: 80px;
+    cursor: pointer;
   }
   .popular_city {
     font-size: 13px;

@@ -3,9 +3,12 @@ import texts from "./AnimeText";
 import "./Box.css";
 function Box() {
     const [location, setLocation] = useState("")
+    const [animeText, setanimeText] = useState("Cooking gone wrong?")
+   
+   
   return (
     <div className="box">
-      <h1>Marathon movie night?</h1>
+      <h1>{animeText}</h1>
       <p className="order_food_desc">Order food from favourite restaurants near you.</p>
       <div className="address_pick">
         <input type="text" placeholder="Enter Your Delivery Location" onChange={(e)=>setLocation(e.target.value)} />
