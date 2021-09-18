@@ -197,17 +197,17 @@
 
 
 .loginCompo{
-  position:relative;
+  position:absolute;
   z-index: 1;
   right: -600px;
-  top: -550px;
-  width: 400px;
-  height: 800px;
-  background: blue;
+  top: 0px;
+  width: 550px;
+  height:100%;
+  background:#ffffff;
   -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 0s;
   animation: slide 0.5s forwards;
-  animation-delay: 2s;
+  animation-delay: 0s;
 }
 
 @-webkit-keyframes slide {
@@ -216,4 +216,55 @@
 
 @keyframes slide {
   100% {  right: 0; }
+}
+.loginBox{
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 400px;
+  line-height: 40px;
+}
+
+.loginHead{
+  display: flex;
+  justify-content: space-between;
+}
+.loginHead>div>h1{
+  font-weight: 500;
+}
+.loginImage{
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+#logINBTN{
+  width: 100%;
+  outline:none;
+  border: 1px solid lightgray;
+  height: 60px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+#logButton{
+  width: 100%;
+  height: 50px;
+  background-color: #FC8019;
+  color: white;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+}
+.loginBox>p{
+  font-size: 12px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

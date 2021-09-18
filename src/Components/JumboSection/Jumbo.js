@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Jumbo.css";
 import Box from "./Box";
 import Login from "./Login";
@@ -6,12 +6,17 @@ import Signup from "./Signup";
 function Jumbo() {
   
   const [animeText, setanimeText] = useState("Movie marathon?");
+  const [logslider,setlogSlider]=useState(false);
+  const [signSlider,setSignSlider]=useState(false);
   const handleLogin=()=>{
-    console.log("login")
+    setlogSlider(true)
   }
   const handleSignUp=()=>{
-    console.log("handleSignUp")
+    setSignSlider(true)
   }
+  useEffect(() => {
+   
+  }, [logslider])
   return (
     <div className="jumbo">
       <div className="jumboLeft">
@@ -32,7 +37,12 @@ function Jumbo() {
           src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Breakfast2-new_men3ne"
           alt="topPic"
         />
-        <Login/>
+        {
+          logslider && <Login/>
+        }
+        {
+          signSlider && <Signup/>
+        }
       </div>
     </div>
    
