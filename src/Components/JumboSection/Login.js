@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Jumbo.css";
+import "./Login.css";
+import $ from "jquery";
 function Login() {
-    const cut=()=>{
-        console.log("cut")
-    }
+  const cut = () => {
+    $(".loginCompo").slideToggle(500, () => {
+      $("body").css({
+        overflow: "unset",
+      });
+    });
+  };
   return (
     <div className="loginCompo">
       <div className="loginBox">
-        <i class="fas fa-times" style={{ fontSize: "30px", }} onClick={cut}></i>
+        <i className="fas fa-times iconCross" onClick={cut}></i>
         <div className="loginHead">
           <div>
             <h1>Login</h1>
@@ -19,9 +25,18 @@ function Login() {
             className="loginImage"
           />
         </div>
-        <input type="number" name="" id="logINBTN" placeholder="Phone number"/>
-        <button id="logButton">LOGIN</button>
-        <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
+        <div className="handleUnderBox">
+          <input
+            type="number"
+            name=""
+            id="logINBTN"
+            placeholder="Phone number"
+          />
+          <button id="logButton">LOGIN</button>
+        </div>
+        <p>
+          By clicking on Login, I accept the Terms & Conditions & Privacy Policy
+        </p>
       </div>
     </div>
   );

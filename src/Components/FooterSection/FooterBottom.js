@@ -7,7 +7,7 @@ function FooterBottom() {
         <a href="#">
         <img
           src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"
-          alt="img"
+          alt="pc"
         />
         </a>
       </div>

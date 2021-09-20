@@ -2,7 +2,6 @@
   width: 100%;
   font-family: ProximaNova, Arial, "Helvetica Neue", sans-serif;
   display: flex;
-  
 }
 
 .jumboLeft {
@@ -17,12 +16,12 @@
   justify-content: space-between;
   margin-top: 50px;
 }
-.swiggyLogo{
+.swiggyLogo {
   width: 60px;
   height: 70px;
   object-fit: contain;
 }
-.logoPart{
+.logoPart {
   display: flex;
 }
 .logoPart > h1 {
@@ -30,7 +29,7 @@
   letter-spacing: 3px;
   color: #fc8019;
   font-weight: 800;
-  align-self:center;
+  align-self: center;
 }
 .buttons {
   display: flex;
@@ -65,7 +64,6 @@
 .jumboRight {
   width: 45%;
   height: 550px;
- 
 }
 .jumboRight > img {
   width: 100%;
@@ -107,7 +105,7 @@
     height: 40px;
     width: 90px;
   }
-  .swiggyLogo{
+  .swiggyLogo {
     width: 40px;
     height: 45px;
     object-fit: contain;
@@ -127,7 +125,7 @@
     object-fit: cover;
   }
 }
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
   .jumboLeftHeader {
     width: 90%;
     margin-top: 20px;
@@ -147,7 +145,7 @@
     font-size: 12px;
     font-weight: 400;
   }
-  .swiggyLogo{
+  .swiggyLogo {
     width: 40px;
     height: 45px;
     object-fit: contain;
@@ -167,8 +165,7 @@
     object-fit: cover;
   }
 }
-@media only screen and (max-width: 250px){
-  
+@media only screen and (max-width: 250px) {
   .login {
     height: 30px;
     width: 40px;
@@ -183,88 +180,13 @@
     font-size: 10px;
     font-weight: 200;
   }
-  .swiggyLogo{
+  .swiggyLogo {
     width: 30px;
     height: 35px;
     object-fit: contain;
   }
   .logoPart > h1 {
-   
     letter-spacing: 1px;
     font-size: 10px;
   }
-}
-
-
-.loginCompo{
-  position:absolute;
-  z-index: 1;
-  right: -600px;
-  top: 0px;
-  width: 550px;
-  height:100%;
-  background:#ffffff;
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 0s;
-  animation: slide 0.5s forwards;
-  animation-delay: 0s;
-}
-
-@-webkit-keyframes slide {
-  100% {  right: 0; }
-}
-
-@keyframes slide {
-  100% {  right: 0; }
-}
-.loginBox{
-  margin-left: 30px;
-  margin-top: 30px;
-  width: 400px;
-  line-height: 40px;
-}
-
-.loginHead{
-  display: flex;
-  justify-content: space-between;
-}
-.loginHead>div>h1{
-  font-weight: 500;
-}
-.loginImage{
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-}
-#logINBTN{
-  width: 100%;
-  outline:none;
-  border: 1px solid lightgray;
-  height: 60px;
-  margin-top: 20px;
-  padding-left: 20px;
-}
-#logButton{
-  width: 100%;
-  height: 50px;
-  background-color: #FC8019;
-  color: white;
-  font-weight: 500;
-  outline: none;
-  border: none;
-  margin-top: 20px;
-}
-.loginBox>p{
-  font-size: 12px;
-}
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }

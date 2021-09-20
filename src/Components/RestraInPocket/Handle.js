@@ -11,13 +11,13 @@ function Handle() {
             all-new Swiggy app.
           </p>
           <div className="handle_store">
-            <a href="#">
+            <a href="/#">
               <img
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
                 alt="google"
               />
             </a>
-            <a href="#">
+            <a href="/#">
               <img
                 src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
                 alt="apple"
@@ -29,12 +29,12 @@ function Handle() {
       <div className="handle_right">
         <img
           src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/pixel_wbdy4n"
-          alt="image"
+          alt="imagess"
           className="upperImg"
         />
         <img
           src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/iPhone_wgconp_j0d1fn"
-          alt="image"
+          alt="imagess"
           className="lowerImage"
         />
       </div>
