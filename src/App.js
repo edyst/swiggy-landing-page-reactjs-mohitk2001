@@ -1,15 +1,23 @@
-import React from "react";
-import Feature from "./Components/FeatureSection/Feature";
-import Footer from "./Components/FooterSection/Footer";
-import Jumbo from "./Components/JumboSection/Jumbo";
-import Handle from "./Components/RestraInPocket/Handle";
+import logo from './logo.svg';
+import './App.css';
+
 function App() {
   return (
-    <div className="app">
-      <Jumbo />
-      <Feature />
-      <Handle />
-      <Footer />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
